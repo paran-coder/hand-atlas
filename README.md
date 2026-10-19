@@ -1,15 +1,18 @@
-# HAND ATLAS v4.3.0 — GitHub / Vercel
+# HAND ATLAS v4.5.1 — 74개 손 포즈
 
-GitHub 저장소 **최상위**에 `index.html`과 `assets/` 폴더를 그대로 업로드하세요.
-ZIP 파일 자체를 저장소에 업로드하면 웹사이트가 실행되지 않습니다. 반드시 압축을 풀어 내부 파일을 올리세요.
+GitHub 및 Vercel 정적 사이트 배포용입니다. 관리자 기능은 없습니다.
 
-```text
-index.html
-assets/
-  pose-001.webp
-  ...
-  pose-080.webp
-```
+## 내용
+- `index.html`: 손 포즈 검색/열람, 상세 이미지 및 영어 프롬프트 복사
+- `assets/`: 실제 표시되는 이미지 74개 (WebP)
 
-Vercel에서 GitHub 저장소를 import하고 Framework Preset을 `Other`로 선택하세요. 빌드 명령은 필요하지 않습니다.
-관리자 기능은 포함되지 않은 공개 열람용입니다.
+기존 ID는 바꾸지 않았습니다. 제거된 ID: 27, 35, 37, 38, 40, 51.
+52번은 새 포즈로 변경했습니다.
+
+## GitHub/Vercel
+1. ZIP을 압축 해제합니다.
+2. `index.html`과 `assets/` 폴더를 저장소 루트에 업로드합니다.
+3. Vercel에서 정적 사이트로 배포합니다 (Framework Preset: Other).
+4. HTML의 상대 경로 때문에 `index.html`을 단독으로 이동하면 이미지는 표시되지 않습니다.
+
+웹 브라우저에서 바로 확인하려면 별도 제공된 `HAND-ATLAS-v4.5.1-74-offline-preview.html` 파일을 사용하세요. (이미지 내장)
